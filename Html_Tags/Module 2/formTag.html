@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    <form >
+        <input type="text"><br><br>
+        <input type="number"><br><br>
+        <input type="password"><br><br>
+        <input type="reset" value="Clear All"><br><br>
+    </form>
+    <input type="number"><br>
+    <br><br><br>
+
+
+    
+    <!-- Submit and img buttons
+         submitted data always displays on web browser except login info
+        -->
+    <h3>Demo on Submit and Image Buttons</h3>
+    <form>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="number" id="num" name="num"><br><br>
+        <input type="submit"   value="Submit"><br><br>
+    </form>
+        <!-- the below tag is outside form so it will not be sent to the browser  -->
+        <input type="number" id="phone" name="phone"><br><br>
+
+
+        <!-- image button -->
+         <input type="image"   src="images/submitbtn.png" alt="submit" height="100px">
+
+
+
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <!-- Form tag : html forms / applications 
+                        group of input elements 
+            method = represents a way of transportation.
+        -->
+
+        <!--    get => it shows the data in search bar.
+                    => it works faster than post.
+                    => max size 5.7kb
+                    => it support bookmarks
+
+                post => it does not show the data in search bar.   
+                     => its slow
+                     => no limit'
+                     => it does not support bookmarks
+
+            
+                autocomplete="on/off"   => used to get suggestion while login or submitting form
+        
+        -->
+
+        <h3>Demo on HTML Forms</h3>
+        <!-- <form action="https://www.abcd.com/test.jsp"  method="get"> -->
+        <form action="https://www.abcd.com/test.jsp"  method="post" autocomplete="off">
+
+            <input type="text" id="tf1" name="tf1"><br><br>
+            <input type="text" id="tf2" name="tf2"><br><br>
+            <input type="image"  name="sb" src="images/submitbtn.png" height="100px"><br><br>
+
+        </form>
+
+
+
+        <!-- Hypertext transfer protocol    => it transfers only hypertext data to the server and not non-hypertrxt      -->
+
+
+
+
+
+
+
+    </body>
+</html>

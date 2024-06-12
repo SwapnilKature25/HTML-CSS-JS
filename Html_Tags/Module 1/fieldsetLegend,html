@@ -1,0 +1,41 @@
+<!-- ex14.html -->
+<!-- example on  fieldset & legend  tags -->
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <title>Ex14</title>
+    <link rel="icon" href="images/s24.webp">
+	<style>
+	   img{
+		width:200px;
+		height:200px;
+		border-radius:15px;
+	   }
+	</style>
+  </head>
+  <body>
+	<fieldset>
+		<legend>List of Colors</legend>
+		<ul>
+			<li>Red</li>	<li>Green</li>	<li>Yellow</li>
+			<li>Cyan</li>	<li>Pink</li>
+		</ul>
+	</fieldset>
+	<br>
+
+	<fieldset style="width:650px; border:15px solid blue; border-radius:30px; margin:auto; text-align:center;">
+	  <legend style="font-size:50px; font-family:'Harlow Solid'; color:hotpink; text-align:left;">My Collection</legend>
+	  <img src="images/ds.png">
+	  <img src="images/girl.jpg">
+	  <img src="images/hill.png">
+	  <img src="images/nature.png">
+	  <img src="images/spring.jpg">
+	  <img src="images/snow.jpg">
+	  <img src="images/ocean.webp">
+	  <img src="images/rose.jpeg">
+	  <img src="images/moon.png">	  
+	</fieldset>
+
+		
+  </body>
+</html>

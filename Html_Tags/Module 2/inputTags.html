@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+
+
+
+
+<body>
+    <!--  Webpage  -> dp(Data Presentation) - Module 1 , ui(user interface) - Module 2      -->
+
+    <!-- input tag : It is used to form elements(input elements) 
+                     these elements are used to take input from user.
+                     it's in inline tag and unpaired tag. 
+                     (inline level = side by side space occupies)
+                     (block level  = line by line space occupies)
+                     
+                     note : by default, input tag creates "text field".
+        Syn : <input attr>
+                     -->
+
+    <!-- input tag  -  includes only upto 1line of input (we can only see 20-22 chara in text other get hidden) 
+                                                         ( we can see 50 characters in customized as size="50" )
+         textarea tags  -  includes more than 2 lines  
+         
+         
+    textfields  => any type of Data -->
+
+
+
+
+
+<!-- There are 14 fields : 
+     Every input element should have id and name attributes.  -->
+
+
+    <!-- 1. Text  => size , id, placeholder, name, maxlength , required, autofocus    -->
+
+    <h3>Demo on Text Fields</h3>
+
+    <input type="text" >
+    <input type="text"  size="50" name="size upto 50 char">
+    <input type="text" id="fname">
+    <!-- Js => In Js to access any element/tag we need id
+               js => var=fname.value   --- to access any value just type  ( id.value ) then we get the value. 
+    -->
+
+
+
+    <!-- Id and name should be same.      
+        In Java the data can be access by using name only.    
+    -->
+    <input type="text" id="fname" name="fname">
+    <br><br><br>
+    <input type="text"  maxlength="10" >            
+    <!-- used to take the data upto neded char -->
+     <br><br>
+    
+
+
+    <input type="text" placeholder="Enter Username" >        
+    <!-- placeholder - used to display user what to enter in textbox 
+                    -  it is used to show message in inside of text box for ex. instagram
+    -->
+
+
+
+    <br><br>
+    <label>Enter Username</label> <span style="color: red;">*</span><br>
+    <input type="text" placeholder="username">
+    <!-- label is used to show text outside of text box.
+    -->
+    
+
+
+    <!-- required  =  to make our text data to be mandatory we should go for required attribute    -->
+    <br><br>
+    <label>Enter Username</label> <span style="color: red;">*</span><br>
+    <input type="text"  required>
+    <!-- <input type="text"  title="Ye tak re"> -->
+
+
+
+    <!-- mouse pointer =>  arrow
+         cursor     =>  blinking pointer called cusrsor 
+    -->
+
+    <!-- /autofocus  => When we use autofocus in those input tag there automatically cursor will place -->
+     <input type="text" autofocus>
+     <br><br>
+
+
+
+
+
+
+    <!-- 08/06/24 -->
+
+    <!-- Password   => placeholder , maxlength -->
+    <h3>Demo on Password Fields</h3>
+    <input type="password" ><br><br>
+    <input type="password" placeholder="enter card cvv" maxlength="3">
+    <br><br>
+
+    <!-- Number     => placeholder, min, max, step   -->
+    <!-- we can add only following values  0-9 , -, +, . , e-exponent     -->
+    <h3>Demon on Number Fields</h3>
+    <input type="number" placeholder="enter a number" ><br><br>
+    <input type="number" min="0" max="500" step="5">
+    <!-- min max attr can decide the range .  if range goes out of the limit it will give error message -->
+    <!-- step[incr/decr]  attr = used as incr and decre operator -->
+
+
+
+    <!-- Buttons    => reset , submit, image 
+            attr    => value ,  
+    -->
+    <h3>Demon on Button Fields</h3>
+    <input type="button" >
+    <h3>Demon on reset Button</h3>
+    <input type="reset" value="Clear All">
+    
+
+
+    
+
+
+</body>
+</html>

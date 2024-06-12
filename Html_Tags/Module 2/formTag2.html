@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Demo on email, url, date, time,color elements</h3>
+        <form action=" " autocomplete="on">
+            <!-- for is used to show that the label is for below particular id or name so after clicking on the label it will cursor goes directly to textbox. -->
+            <label for="em">Enter EmailID : </label>
+            <input type="email" id="em" name="em">
+            <br><br>
+
+            <label for="url">Enter Url : </label>
+            <input type="url" id="url" name="url">
+            <br><br>
+
+
+            <label for="dt">Select Date : </label>
+            <input type="date" id="dt" name="dt"  min="2020-01-26"  max="2025-01-26" >
+            <!-- min and max used to get the date from particular date to date -->
+            <br><br>
+
+            <label for="t">Select Time : </label>
+            <input type="time" id="t" name="t">
+            <br><br>
+
+
+            <label for="color">Select Color : </label>
+            <input type="color" id="color" name="color">
+            <br><br>
+
+
+            <!-- radio btn => select any one option
+                 checkbox btn => select multiple options
+            -->
+            <label for="rbtn">Select Radio </label><br>
+            <input type="radio" id="rbtn" name="rbtn" > <label>Male</label><br>
+            <input type="radio" id="rbtn" name="rbtn"> <label>Female</label>
+            <br><br>
+
+
+
+            <!-- The Attributes doesn't have values called has boolean attributs  => ex. checked, autofocus ,.... -->
+
+            <!-- <label for="check">Type of Class :  </label><br>
+            <input type="checkbox"  id="c" name="check" checked> <label>First AC Class</label><br>
+            <input type="checkbox"  id="c" name="check"> <label>Second AC Class</label><br>
+            <input type="checkbox"  id="c" name="check"> <label>Third AC Class</label><br>
+            <input type="checkbox"  id="c" name="check"> <label>Sleeper Class</label><br>
+            <br><br>
+
+            <input type="submit" value="SUBMIT"> -->
+
+
+
+            <fieldset>
+            <legend for="check">Type of Class :  </legend><br>
+            <input type="checkbox"  id="c" name="check" checked> <label>First AC Class</label><br>
+            <input type="checkbox"  id="c" name="check"> <label>Second AC Class</label> &nbsp;
+            <input type="checkbox"  id="c" name="check"> <label>Third AC Class</label><br>
+            <input type="checkbox"  id="c" name="check"> <label>Sleeper Class</label><br>
+            <br><br>
+
+            </fieldset>
+        <input type="submit" value="SUBMIT">
+
+
+    </form>
+</body>
+</html>
