@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>textarea tag</title>
+    <title>textarea ,select and option tag</title>
 </head>
 <body>
-    <h3>Demo on Textarea tag</h3>
+    <h1>Demo on Textarea tag</h1><br>
+    <h3>Demo on Multiline text Box</h3>
+    <label>Comment(s)</label> <br>
+    <textarea name="text" id="text"></textarea>
+
+    <br><br>
+
+
+    <label>FUll Address</label><br>
+    <textarea name="custom" id="custom" rows="8"  cols="40"></textarea>
+    <!-- it display 6 rows and 40 cols on the screen -->
+
+    <br><br><br>
+
+    <!-- example on select and option tag -->
+     <!-- select  => Innline tag   -->
+     <!-- option  => Block tag   
+        we use select and option tag to  create dropdown box.  
+    -->
+     <h1>Demo on select and option tag</h1>
+     <select name="" id="">
+        <option value="">AAAAAAAAAAAAAAA</option>
+        <option value="">BBBBBBBBBBBBBBB</option>
+        <option value="">CCCCCCCCCCCCCCC</option>
+     </select>
+     <br><br>
+
+     <!-- Select below Options<select name="" id=""><option value="CS"></option></select> -->
+
+    <!-- to select muliple colleges use ctrl+select/ shift+select -->
+
+     <label>Select College </label>
+    <!-- <select name="college" id="college" multiple> -->
+    <select name="college" id="college" multiple>
+        <!-- value attribute sends short values instead of sending long names -->
+        <option value="mitu">MIT World Peace University, Pune</option>
+        <option value="vit">Vishwakarma Institute of Technology (VIT)</option>
+        <option value="vjti" selected>Veermata Jijabai Technological Institute</option>
+        <option value="dypi">Dr. D. Y. Patil School of Engineering and Technology - [DYPSOET], Pune. </option>
+        <option value="bve">Bharati Vidyapeeth College of Engineering, Navi Mumbai</option>
+        <option value="mite">MIT Academy of Engineering</option>
+    </select>
+
+
+
+
+
+
+
+
 </body>
 </html>

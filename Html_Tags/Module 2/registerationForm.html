@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registeration Form Designing</title>
+    <style>
+        div{
+            width: 400px;
+            border-radius: 20px  ;
+            box-shadow: 0 0 25px black;
+            margin: auto;
+            padding: 40px 50px;
+            
+        }
+        #btn{
+            background-color: rgb(106, 105, 105);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #btn:hover{
+            background-color: rgb(225, 81, 81);
+        }
+    </style>
+</head>
+<body>
+    <!-- Student Registeration Form Designing -->
+    <div >
+        <legend align="center" style="font-size: 30px;  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Registeration Form</legend>
+    <form id="frm"  action="redirectPage.html"  method="post"  style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">
+        <p>
+            <label for="name">Student Name  </label><span>*</span><br>
+            <input type="text" id="name" name="name" autofocus required>
+        </p>
+        <p>
+            <label for="em">Email ID  </label><span>*</span><br>
+            <input type="email" id="em" name="em" required>
+        </p>
+        <p>
+            <label for="cont">Contact Number </label><span>*</span><br>
+            <input type="text" id="contact" name="contact" maxlength="10"  required>
+        </p>
+        <p>
+            <label for="dob">Date of Birth </label><br>
+            <input type="date" id="dob" name="dob" min="1990-01-22" max="2024-06-13"  required>
+        </p>
+        <p>
+            <label for="gen">Gender :</label><br>
+            <input type="radio" id="gen" name="gen" value="m">Male  &nbsp;
+            <input type="radio" id="gen" name="gen" value="f">Female &nbsp;
+            <input type="radio" id="gen" name="gen" value="f">Others &nbsp;
+
+        </p>
+        <p>
+            <label for="course">Which Course?</label><br>
+            <select name="course" id="course">
+                <option value="c">C Programming</option>
+                <option value="java" selected>Java Full Stack</option>
+                <option value="py">Python Full Stack</option>
+                <option value=".net">.Net</option>
+                <option value="ds">Data Science</option>
+                <option value="aws">AWS</option>
+            </select>
+        </p>
+        <p>
+            <label for="mot">Mode of Training</label><br>
+            <select name="mot" id="mot">
+                <option value="ct">Classroom Training</option>
+                <option value="ot">Online Training</option>
+                <option value="pt">Placement Training</option>
+                <option value="pt">Project Training</option>
+            </select>
+        </p>
+        <p>
+            <input type="checkbox" id="tc" required>
+            <label>I Accepted terms & Conditions</label>
+        </p>
+        <p align="center">
+            <button id="btn" type="submit" >Register Here</button>
+        </p>
+    </form>
+    </div>
+</body>
+</html>
