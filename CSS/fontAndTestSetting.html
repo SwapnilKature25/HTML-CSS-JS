@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font & test setting</title>
+    <style>
+        /* normal text => 16,18,20 
+        Title => 34,35,36 */
+        p{
+            font-size: 20px;
+            /* bold, normal */
+            font-weight: bold;
+            /* italic, normal */
+            font-style: italic;
+            /* check from left to right so below first footlight will be applied 
+            if 1st one failed then only it will go to seconf  */
+            font-family: 'Footlight MT', Gabriola , 'Ink Free';
+            font-family: 'Footlight MT1', Gabriola1 , 'Ink Free';
+        }
+
+
+        div{
+            /* Container/Main tag => C/M size*N% /100   =>  16*150/100 */   
+            font-size: 150%;
+            /* to use underline and to remove used decoration 
+                underline ,overline , line-through(strikeout) , none      */
+            text-decoration: underline;
+            letter-spacing: 6px;
+            /* letter-spacing: -5px; */
+            word-spacing: 20px;
+            line-height: 50px ;
+            /* center, justify */
+            text-align: justify;
+            /* capitalize, lower, upper,  */
+            text-transform: capitalize;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Demo on font & test setting</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laboriosam reiciendis, itaque vel incidunt aperiam a illo asperiores deserunt voluptates, aspernatur nemo quibusdam sunt labore consequuntur, repudiandae odit ut. Nulla est commodi ipsa laboriosam. Sit odio consectetur veritatis at, libero ratione fugit ab a vero.
+    </p>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore aperiam accusantium consequatur. 
+        Sit sed labore culpa accusantium illo quis recusandae eum veritatis ea? Animi quas nobis id mollitia porro?
+    </div>
+    <br>
+
+    <input type="text" style="text-transform: uppercase;">Enter Name
+</body>
+</html>
