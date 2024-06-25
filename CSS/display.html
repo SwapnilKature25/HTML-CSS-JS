@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            font-size: 20px;
+            text-decoration: none;
+             /* anchor is  a inline tag so width will not applied to it. */
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Demo on Display</h2>
+    <!-- display  => inline, block, inline-block, none, flex, grid -->
+     
+     <!-- block level elements converting into inline by using inline property. 
+        block level => inline 
+     -->
+    <h1 style="display: inline;">Laptop </h1>
+        <img src="photos/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" width="200px"> &nbsp;
+    
+    <h1  style="display: inline;">Pain </h1>
+        <img src="photos/pain.jpg" width="200px" > &nbsp;
+    <h1  style="display: inline;">Laptop </h1>
+        <img src="photos/james-harrison-vpOeXr5wmR4-unsplash.jpg" width="200px"> 
+
+
+
+    <br><br><br>
+
+    <!-- inline => block level -->
+     <span style="background-color: cyan;  display: block;">Hello World </span>
+     <span style="background-color: rgb(199, 124, 38);  display: block;">Hello World </span>
+     <br>
+
+     <nav style="background-color: rgb(232, 202, 202);  text-align: center; width: 100%;  margin-bottom: 10px;">
+        <!-- anchor is  a inline tag -->
+        <a href="colors.html"  target="mf">Colors</a>
+        <a href="gradient.html" target="mf">Gradient</a>
+        <a href="fieldset.html" target="mf">Fieldset</a>
+     </nav>
+
+     <iframe name="mf" width="100%" height="500px" src="gradient.html"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Elements</title>
+    <link rel="icon" href="man.jpg">
+</head>
+<body>
+    <form action="demo.jsp" method="post" autocomplete="on">
+        <div>
+        <h2></h2>
+        <p>
+            <label for="fna">First Name : </label>
+            <input type="text" id="fna" max="10" maxlength="10" placeholder="first name"    required autofocus >
+        </p>
+        <p>
+            <label for="lna">Last Name : </label>
+            <input type="text" id="lna" maxlength="20" placeholder="last name" required>
+        </p>
+        <p>
+            <label for="pass">Password : </label>
+            <input type="password" id="pass" name="pass" placeholder="enter password"  maxlength="6" > 
+        </p>
+        <p>
+            <label for="num">ID Number : </label>
+            <input type="number" id="num" value="num" min="0" max="100" step="5">
+        </p>
+        <p>
+            <label for="em">Email : </label>
+            <input type="email" id="em" name="em" placeholder="email">
+        </p>
+        <p>
+            <label for="url">URL : </label>
+            <input type="url" id="url" name="url" placeholder="enter valid url">
+        </p>
+        <p>
+            <label for="clr">Color : </label>
+            <input type="color" id="clr" name="clr">
+        </p>
+        <p>
+            <label for="dt">Date :  </label>
+            <input type="date" id="dt" name="dt" min="2003-02-14"  max="2024-06-23">
+        </p>
+        
+        <p>
+            <label for="tim">Time : </label>
+            <input type="time" id="tim" name="tim">
+        </p>
+
+        <p>
+            <label for="gen">Gender : </label><br>
+            <input type="radio" id="rtn" name="rbtn"><label>Male</label><br>
+            <input type="radio" id="rbtn" name="rbtn"><label>Female</label><br>
+            <input type="radio" id="rbtn" name="rbtn"><label>Others</label>
+        </p>
+
+        <p>
+            <fieldset>
+                <legend>Languages</legend>
+                <input type="checkbox" id="check" name="check" checked><label>Java</label>
+                <input type="checkbox" id="check" name="check"><label>Js</label> <br>
+                <input type="checkbox" id="check" name="check"><label>C</label>
+                <input type="checkbox" id="check" name="check"><label>HTML</label><br>
+                <input type="checkbox" id="check" name="check"><label>CSS</label>
+            </fieldset>
+        </p>
+
+        <p>
+            <label for="files">Upload Files : </label><br>
+            <input type="file"><br><br>
+            <input type="file" multiple accept=".pdf, .doc, .c, .html, .jpg"><br><br>
+            <button type="submit">Upload</button>
+
+        </p>
+
+        <p>
+            <!-- textarea -->
+            <!-- <label for="cm">Comment(s)</label>
+            <textarea name="cm" id="cm" maxlength="10" ></textarea> -->
+
+            <label for="fa">Full Address : </label>
+            <textarea name="fa" id="fa" rows="3" cols="20"  ></textarea>
+
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="button" value="Submit btn">
+            <input type="reset" value="Clear All">
+            <input type="image" src="submitbtn.png" alt="submit" height="30px">
+        </p>
+
+
+
+
+
+        <br><br><br><br>
+    </form>
+</body>
+</html>
