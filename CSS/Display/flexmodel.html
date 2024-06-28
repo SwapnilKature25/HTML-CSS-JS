@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify Content</title>
+    <style>
+        #main{
+            display: flex;
+            width: 800px;
+            /* flex-direction: row; */
+            border: 5px solid;
+            /* justify-content: start, center, space-b/w  */
+            justify-content: center;
+        }
+        #main2{
+            display: flex;
+            border: 2px solid;
+
+            /* to change space automatically use justify content
+                space/no.of.elements
+                if 5 elements are there then 4 spaces in b/w them.
+                ex: 1000px/4;
+            */
+            /* justify-content: space-between; */
+
+
+            /* ex: 1000/6 => 166/2 = 83 from start and end space is their */
+            /* justify-content:space-around; */
+
+
+            /* 1000/7  = 142px  142/2=71 */
+            justify-content:space-evenly;
+
+
+            /* n=6  => no. of spaces in between
+            between = n-1;
+            around = n;
+            evenly = n+1; */
+
+        }
+    </style>
+</head>
+<body>
+    <!-- justify-content : it used to adjust the space/gap b/w elements as needed -->
+    <h1>Demo on Flex Model</h1>
+
+    <div id="main">
+    <div>Facebook</div>
+    <div>Apple</div>
+    <div>Microsoft</div>
+    <div>CISCO</div>
+    <div>AMD</div>
+    </div>
+
+    <br><br>
+
+    <div id="main2">
+        <div>Facebook</div>
+        <div>Apple</div>
+        <div>Microsoft</div>
+        <div>CISCO</div>
+        <div>AMD</div>
+        <div>Salesforce</div>
+        </div>
+
+</body>
+</html>

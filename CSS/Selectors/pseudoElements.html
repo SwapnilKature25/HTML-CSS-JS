@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pseudo Elements</title>
+    <style>
+
+        /* prefix */
+        h2::before{ 
+            content: '\1F604';
+            padding: 30px;
+         }     
+
+         /* suffix */
+        h2::after{
+            content: '  \1F604';
+        }
+
+        /*
+        it will change color of first letter of all tag elements
+        ::first-letter{
+            color: red;
+        } */
+
+        div::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+
+        div::first-line{
+            color:brown;
+        }
+
+        ::placeholder{
+            color: rgb(206, 134, 18);
+            text-align: center;
+        }
+        
+        /* to change text select color we have, */
+        ::selection{
+            background-color: yellow;
+            color: red;
+            text-decoration: underline;
+        }
+        ol ::marker{
+            color: rgb(3, 18, 116);
+            font-size: 27px;
+        }
+
+        ul ::marker{
+            color: red;
+            font-size: 27px;
+        }
+       
+    </style>
+</head>
+<body>
+    <!--    Pseudo Elements  =>  
+        
+    synatax: 
+        tag/id/class/child/pseudoclass::p-e{
+        prop: val;
+        }   
+    
+    -->
+    <h2>Demo on Pseudo Elements</h2>
+
+    <h2>HTML</h2>
+    <H3>CSS</H3>
+    <h2>JS</h2>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tenetur et architecto velit, dolorem voluptate illum perspiciatis debitis earum. Minima expedita adipisci quaerat iusto reiciendis quasi voluptatibus quod possimus! Adipisci incidunt dolore ab iusto vitae eligendi pariatur commodi quam sunt sit blanditiis quo mollitia repellat, unde in corporis exercitationem reprehenderit.
+    </div>
+    <br><br>
+    <input type="text" placeholder="enter firstname"> <br><br>
+    <input type="text" placeholder="enter lastname">
+    <br><br>
+
+
+    <ol>
+        <li>HTML</li>   <li>CSS</li>    <li>JS</li>
+    </ol>
+   <br>
+    <ul>
+        <li>HTML</li>   <li>CSS</li>    <li>JS</li>
+    </ul>
+</body>
+</html>

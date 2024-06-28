@@ -1,0 +1,40 @@
+
+#gridbox {
+    /* the default size of martix is ( N x 1 ) */
+    display: grid;
+    /* how many columns we required it is decided by below property. 
+        col size decided by browser.
+        based on content rows height going to change.
+    */
+    /* grid-template-columns: 200px 200px 200px; */
+
+    /* 1 auto defines 1 column */
+    grid-template-columns: auto auto auto;
+
+    /* used to define row of height
+        it will specify row height row  by row.
+    */
+    /* grid-template-rows: 100px 150px 80px ; */
+    grid-template-rows: 60px 60px 60px 60px ;
+
+    /* column-gap: 20px;
+    row-gap: 20px; */
+    grid-gap: 20px;
+
+    /* in background the main div tag color display after giving gap in child tags */
+    background:radial-gradient(circle, cyan , white,red, orange );
+    /* background-image: url(photos/pain.jpg) ; */
+
+    padding: 10px;
+    
+    font-size: 30px;
+    
+}
+
+#gridbox div:nth-child(even){
+    background-color: cyan;
+}
+
+#gridbox div:nth-child(odd){
+    background-color: pink;
+}

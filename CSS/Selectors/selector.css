@@ -1,0 +1,48 @@
+
+
+/* 
+    same properties apply according to priority.
+*/
+
+/* tag applying order for heterogeneous selectors
+
+ex: 
+.c1{
+}
+
+.c2{
+}
+
+.c3{
+}
+
+*/
+
+/* 
+tag applying order for heterogeneous selectors
+Execution order :  */
+
+/* 1st */
+h2{
+    color: blue;
+}
+
+/* 4th */
+#i{
+    /* color: red; */
+    box-shadow: 0 0 10px black;
+    border-radius:25%;
+}
+
+/* 3rd */
+.c{
+    /* color: aqua; */
+    width: 50%;
+    text-align: center;
+}
+
+/* 2nd */
+div h2{
+    /* color: tomato; */
+    background-color: yellow;
+}

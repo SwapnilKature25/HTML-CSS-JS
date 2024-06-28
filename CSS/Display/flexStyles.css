@@ -1,0 +1,20 @@
+
+#main{
+    /* 1st apply this */
+    display: flex;
+    /* flex direction by default is row*/
+    flex-direction:row;
+    gap: 50px;
+    /* wrap means the excess data should be go to next line */
+    flex-wrap:wrap;
+}
+
+/* in p tag inbuilt gaps are available but in other tags it is not */
+
+#main div{
+    background-color: cyan;
+    
+}
+
+
+
