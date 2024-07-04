@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literals</title>
+</head>
+<body>
+    <h2>Demo on Literals</h2>
+
+    <!-- 
+    
+    1.  String Literal =>  (" ") or (' ')
+        => used to represent String datatype.
+        => since JS1 version
+        => allowed to write only 1 line text.
+        => not support string interpolation
+        => syn:  "text"  or   'text'
+
+
+    2.  Template Literals  => ` ` (backtick)  
+        => used to represent String datatype.
+        => since JS6 (ECMA Script)
+        => allowed to write n lines text.
+        => support string interpolation.
+        => syn :  `text`
+
+
+    => 99% in React and Angular developer use (``)backtick literal only.
+
+    Js new features is nothing but ECMA script.
+    Js new features is nothing but ECMA script.
+    Js new features is nothing but ECMS script.
+    Js new features is nothing but ECMA script.
+    Js new Features is nothing but ECMA script.
+    Js new Features is nothing but ECMA script.
+
+    -->
+
+    <script>
+        document.writeln("Apple");
+        document.writeln('Mango')
+        document.writeln(`Banana`);
+        // not allowed multiple lines for "" or ''
+        // console.log("Hypertext
+        // Markup
+        // Language");
+
+        // to write multiple lines go for ` `
+        console.log(`
+        Hypertext
+        Markup
+        Language`);
+    </script>
+
+
+
+    <!-- if you want to write any html tag in Javacript then use String literal.
+
+
+            X
+    DQ  =>  DQ , SQ,  BT
+
+                  X
+    SQ  =>  DQ , SQ,  BT
+
+                      X
+    BT  =>  DQ , SQ,  BT
+
+     Same symbol not allowed.
+     -->
+
+    <script>
+        // <h2>Hello</h2>   Unexpected token '<'
+        "<h2>Hello</h2>"            //this will not print the data to print use below 
+        document.write("<h2>html tags in Js</h2>")
+        document.write('<img src="pain.jpg" width="200px"> <br><br>')
+        // document.write('<input type='text'>  ')      not allowed to use same string within string
+        document.write('<input type="text">  ')
+        document.write(` <br> <button> Login </button>`)
+    </script>
+    
+</body>
+</html>
