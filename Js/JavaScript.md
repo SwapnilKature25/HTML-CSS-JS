@@ -46,4 +46,69 @@
 
 
 
-        
+
+# Diff b/w var & let
+
+        var                                 let
+supports re-defination/redeclaration     not support
+supports hoisting                                   not
+for changable use var                   for const,fixed, global use let
+
+
+
+var allowed to use var first and declare later but let doesn't
+
+
+
+
+
+# Js Dialogs       
+
+1. alert :
+displaying message
+alert("text")
+don't add html tag in alert functions.
+
+
+2. confirm :
+taking  confirmation from user (cross checking)
+confirm("text")
+
+3. prompt : 
+taking input from user (runtime values)
+prompt("text")
+-> if user didn't enter the data and tap cancel then it will return null if tap ok blank space.
+
+all the above 3 fun accessible through window object.
+
+
+
+
+
+
+# Js Operators :
+
+-> Operator is a Symbol(special char) and it is used to perform certain operations(task).
+-> Every Operator is a Symbol, but every symbol is not an operator.
+-> Every operator requires some values, those are called operands.
+-> ex. a+b
+
+# Expression  :  
+It's Combination of one operator and some operands.
+
+
+
+
+# Operators Categories :
+
+1. Unary   -> It requires one operand  -> incr/ decr
+
+2. Binary   -> It requires two operand 
+                -> Arithmetic
+                -> relational
+                -> logical
+                -> Logical
+                -> Assignment
+                -> Concatenation
+
+3. Ternary   -> It requires three operand   -> Conditional

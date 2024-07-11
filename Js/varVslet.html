@@ -1,0 +1,27 @@
+<!-- Demo on var VS let -->
+<script>
+    // re-definations
+    var x=100;
+    document.write(x, "<br>")
+
+    var x="apple"       // re-defination / redeclaration
+    //let x="apple";      //Identifier 'x' has already been declared
+    document.write(x, "<br>")
+    
+    var x=new Date();       //re-defination 
+    document.write(x, "<br>")
+    
+
+    // Hoisting  =>   var allowed but let not
+
+    n=10;
+    document.write(n, "<br>");
+    document.write(n*n, "<br>");
+    var n;      //supports hoisting
+
+    // let n;      //Cannot access 'n' before initialization
+
+
+
+    
+</script>
