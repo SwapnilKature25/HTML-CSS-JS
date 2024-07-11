@@ -112,3 +112,40 @@ It's Combination of one operator and some operands.
                 -> Concatenation
 
 3. Ternary   -> It requires three operand   -> Conditional
+
+
+
+
+
+
+# Types of Operators
+
+1. Arithmetic :     +  -  *  /  %  **(power values)
+
+2. Relational :     >  <  >=  <= ==  !=  ===  !==
+
+3. Logical :    &&   ||   !
+
+4. Assignment   :  =
+    <!-- Short-hand  :  +=, -=, /=, *=, %= , **= -->
+
+5. Concatenation  :  +
+
+6. increment/Decrement  :   ++,  --
+
+7.  Ternary   :    ? :
+
+
+
+# Operator Precedency
+
+1.  ( )
+2.  .(memeber operator)
+3.  [ ] 
+4.  ++  --  (pre)
+5.  / % *   (left to right)     -->First come First Serve
+6.  +  -   (left to right)
+7.  >  <  >=  <=
+8.  ==  !=  !== ===
+9.  =
+10. ++ -- (post)

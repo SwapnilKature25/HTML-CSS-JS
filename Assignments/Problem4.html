@@ -5,35 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            background-color: rgba(200, 207, 209, 0.418);
+            background-color: transparent;
+        }
+
+        h1{
+            margin-left: 20%;
+            color: blue;
+        }
         nav{
             text-align: center;
             background-color: blue;
         }
         .blocks{
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 270px 150px 700px;
+            /* column-gap: 20px;
+            row-gap: 20px; */
+            grid-gap: 15px;
+            width: 70%;
+            margin-left: 20%;
+            background-color: none;
         }
-        #b1{
-            border: 1px solid;
-            border-width: 50%;
+        .b1{
+            border: 1px solid rgb(217, 213, 213);
+            /* border-width: 20%; */
+            text-align: center;
+            padding: 30px 80px;
+            background-color: #fff;
+        }
+        .r2{
+            background-color: rgba(143, 211, 238, 0.397);
+        }
+        .b2{
+            /* float: right; */
+            width: 50%;
+            background-color: #fff;
+            border: 1px solid rgb(217, 213, 213);
+        }
+        #check {
+            float: left;
+        }
+        ul li{
+            list-style-type: none; 
+            padding: 5px 0px; 
+        }
+        ul li::before{
+            content: '✓';
+            margin-right: 0.5em;
+        }
+        #btn1{
+            background-color: rgb(26, 123, 234);
+            color: white;
+            font-size: 18px;
+            width: 250px;
+            border-radius: 3px ;
+            padding: 8px 0px;
+        }
+
+        #btn2{
+            border-color: rgb(8, 146, 197);
+            background-color: #fff;
+            color: rgb(8, 146, 197);
+            border-radius: 3px solid skyblue;
+            padding: 5px 15px;
+        }
+        strong{
+            color: rgb(20, 131, 235);
+        }
+
+        #img2{
+            width: 210px;
+            height: 65px;
         }
 
     </style>
 </head>
 <body>
-    <nav><img src="hdfclogo.webp" alt="" height="30px"></nav>
+    <nav><img src="images/hdfclogo.webp" alt="" height="30px"></nav>
+    <h1>Let's Get Started</h1>
     <div class="blocks">
-            <h1>Let's Get Started</h1>
  
-        <div id="b1">
+        <div class="b1">
             <h3>Mobile Number</h3>
             <input type="checkbox" id="check" name="check">
-            <p>I authorize HDFC Bank and its reprsentatives Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, quos ducimus. Officia amet id deleniti tenetur obcaecati expedita esse dolores.</p>
-            <button type="submit">Proceed</button>
+            <p>I authorize HDFC Bank and its reprsentatives to Call, SMS or Communicate via WhatsApp regarding my application.This consent overrides any registration for DNC/ NDNC.I confirm I am in India,I am a major and a resident of India and I have read and I accept HDFC Bank's <strong>Privacy Policy</strong></p>
+            <button type="submit" id="btn1">PROCEED</button>
         </div>
-        <div id="b1">
+        <div class="b2">
+            <img src="images/life_img.png" alt="homeloan" height="200px" >
+            <img src="images/maxresdefault.jpg" alt="homeloan" height="200px" id="img2">
+            <ul>
+                <li> Avail loan upto ₹ <b>30 lakhs</b> and upto 100% LTV</li>
+                <li> Enjoy <b>competitive EMI</b> starting at <b>Rs1999/-</b></li>
+                <li> Get an <b>eligibility check</b> in just <b>5 minutes</b></li>
+                <li> Choose a convenient repayment duration of upto 5 years</li>
+                <li> <b>Track</b> applicatin <b>easily</b> on your mobile app</li>
+            </ul>
+        </div>
+        <div class="b1 r2">
             <h3>Speed the loan Application and Disbursal of loan</h3>
-            <button type="submit">LOGIN AS EXISTING CUSTOMER</button>
+            <button type="submit" id="btn2">LOGIN AS EXISTING CUSTOMER</button>
         </div>
     </div>
 </body>

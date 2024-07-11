@@ -8,7 +8,73 @@
 <body>
     <script>
         let x=15, y=8;
-        let a=10, b="ram", c=true;      //valid in Js 
+        // let a=10, b="ram", c=true;      //valid in Js 
+
+        // 1.   Arithmetic Operators     =>  + - * / % **(power values)
+        document.write("Arithmetic Operators : <br>");
+        document.write(x+y, "<br>");
+        document.write(x*3, "<br>");
+        document.write(x**3, "<br>");
+        document.write(x-y, "<br>");
+        document.write(x/y, "<br>");
+        document.write(x%y, "<br><br>");
+        
+
+
+        // comparison=condition=testcase
+        // 2.   Relational Operators / Comparison    =>  >  <  >=  <= ==  !=  ===  !==
+        document.write("Relational Operators :  <br>");
+        document.write(x>=0, "<br>");
+        document.write(x<=0, "<br>");
+        let z="8"
+        document.write(y==z, "<br>")        //true
+        document.write(y===z, "<br>")       //false
+
+        document.write(y!=z, "<br>")        //false
+        document.write(y!==z, "<br><br>")       //true
+        
+        
+        // 3.   Logical Operators  :  &&   ||   !
+        // <!-- 7 truthtables are there -->
+        
+        document.write("Logical Operators :  <br>");
+        document.write(x>=0 && y<100, "<br>")       //true
+        document.write(!(y<0), "<br><br>")       //true
+        
+        
+        
+        // 4.   Assignment Operator  :    = (to assign values)
+        // Short-hand(it reduce size)  :  +=, -=, /=, *=, %= , **=
+        document.write("Assignment Operators :  <br>");
+        document.write( x+=10,"<br>");
+        document.write( x*=10,"<br>");
+        document.write( y%=10,"<br><br>");
+        
+        x=15;
+        
+
+        // 5.  Concatenation Operators  :   + 
+        // one of your value should be string
+        document.write("Assignment Operators :  <br>");
+        document.write( "green"+"apple"+"<br>");
+        document.write( 100+' Mangoes'+"<br><br>");
+        
+        
+        // 6.   increment/Decrement  :   ++,  --
+        document.write("increment/Decrement Operators :  <br>");
+        
+        document.write(y++, "<br>")     //post
+        document.write(y, "<br>")
+        
+        document.write(--y, "<br>")     //pre
+        document.write(y, "<br><br>")
+        
+        
+        
+        // 7.  Ternary Operators(Decision-making operations)  :    ? :
+        document.write("Ternary Operators(Decision-making operations)  : <br>");
+        document.write((x%2===0) ? "Even No." : "Odd No." ,"<br>" ) 
+
     </script>
 </body>
 </html>

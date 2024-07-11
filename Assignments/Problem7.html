@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probllem 7</title>
+    <style>
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 25px;
+            justify-content:space-evenly;
+
+            margin: 50px 25px;
+        }
+        #block{
+            border: 1px solid rgba(148, 147, 147, 0.185);
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px grey;
+            /* flex: 1; */
+        }
+        b{
+            color: orangered;
+            font-size: 50px;
+        }
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #content{
+            margin: 20px 20px;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            border-color: orangered;
+            color: orangered;
+            cursor:pointer;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>The most searched <b>Luxury</b> cars</h1>
+    </div>
+    <hr>
+    <div class="box">
+        <div id="block">
+            <img src="images/bmw.jpg" alt="bmw" height="250px">
+            <div id="content">
+                <p>BMW X5</p>
+                <p>₹ 79.90 - 98.50 Lakh*</p>
+                <button type="button">Check February Offer</button>
+            </div>
+        </div>
+        <div id="block">
+            <img src="images/Audi-A6.webp" alt="bmw" height="250px">
+            <div id="content">
+                <p>Audi A6</p>
+                <p>₹ 61.90 - 66.50 Lakh*</p>
+                <button type="button">Check February Offer</button>
+            </div>
+        </div>
+        <div id="block">
+            <img src="images/range-rover-vogue-01.webp" alt="bmw" height="250px">
+            <div id="content">
+                <p>Range Rover Velar</p>
+                <p>₹ 98.50 Lakh*</p>
+                <button type="button">Check February Offer</button>
+            </div>
+        </div>
+        <div id="block">
+            <img src="images/mercedes.webp" alt="bmw" height="250px">
+            <div id="content">
+                <p>Mercedes-Benz S-Class</p>
+                <p>₹ 1.65 - 1.74 Cr*</p>
+                <button type="button">Check February Offer</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
