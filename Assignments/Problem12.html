@@ -5,32 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problem 12</title>
     <style>
-        .form{
+        *{
+            background-color: rgb(240, 246, 249);
+        }
+        .regForm{
             display: flex;
             flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #blocks{
+            border: 2px solid grey;
+            border-radius: 5px;
+            width: 40%;
+            padding: 20px 20px;
+            text-align: left;
+            background-color: #fff;
+        }
+        input{
+            margin: 12px;
+            margin-left: 0px;
+            border: 0px ;
+            border-bottom: 1px solid grey;
+            background-color: none;
+            /* border: 2px 2px 5px 10px red; */
+        }
+        button{
+            display: inline-block;
+        }
+        label {
+            background-color: none;
         }
     </style>
 </head>
 <body>
     <form action="Problem7.html">
-    <div class="form">
-        <div>
-            <h1>TALWAR SERVICES</h1>
+    <div class="regForm">
+        <div id="blocks">
+            <h2>TALWAR SERVICES</h2>
             <p>SERVICE REQUEST</p>
             <hr>
             <br><br>
             <b>* Required</b>
         </div>
-        <div>
+
+        <div id="blocks">
             <label for="name">NAME * </label> <br>
-            <input type="text" placeholder="Your answer" >
-        </div>
-        <div>
-            <label for="name">NAME * </label> <br>
-            <input type="text" placeholder="Your answer" >
+            <input type="text" placeholder="Your answer" id="name" >
         </div>
 
+        <div id="blocks">
+            <label for="name">MOBILE NUMBER * </label> <br>
+            <input type="number" placeholder="Your answer"  id="mnumber">
+        </div>
+        
+        <div id="blocks">
+            <label for="name">ALTERNATE NUMBER * </label> <br>
+            <input type="number" placeholder="Your answer" id="anumber">
+        </div>
+        
+        <div id="blocks">
+            <label for="name">VEHICLE NUMBER * </label> <br>
+            <input type="number" placeholder="Your answer" id="number" >
+        </div>
 
+        <div id="blocks">
+            <label for="name">VEHICLE MODEL(SANTRO/110 ETC) * </label> <br>
+            <input type="text" placeholder="Your answer" id="model" >
+        </div>
+
+        <div id="blocks">
+            <label for="name">APOINTMENT DATE * </label> <br>
+            <P>Date</P>
+            <input type="date" id="date">
+        </div>
+        
+        <div id="blocks">
+            <label for="name">PICKUP/APOINTMENT * </label> <br>
+            <P>Date</P>
+            <input type="radio" id="appoint" name="appoint"> NEED PICK-UP <br>
+            <input type="radio" id="appoint" name="appoint"> NEED APPOINTMENT <br>
+            <input type="radio" id="appoint" name="appoint"> NEED TO SEND BREAK-DOWN <br>
+        </div>
+
+        <div id="blocks">
+            <label for="name">WORKSHOP LOCATION * </label> <br>
+            <input type="radio" id="location" name="location"> TADBUND <br>
+            <input type="radio" id="location" name="location"> TIRUMALGIRI-KANAJIGUDA<br>
+        </div>
+
+        <div id="blocks">
+            <label for="name">ADDRESS FOR PICKUP * </label> <br>
+            <input type="text" placeholder="Your answer" id="addr">
+        </div>
+
+        <div id="blocks">
+            <label for="name">LAND MARK * </label> <br>
+            <input type="text" placeholder="Your answer" id="landm">
+        </div>
+
+        <div id="blocks">
+            <label for="name">REMARKS/INSTRUCTIONS * </label> <br>
+            <input type="text" placeholder="Your answer" id="remarks">
+        </div>
+
+        <BUTTon type="submit">Submit</BUTTon>
+        <button type="reset">Clear</button>
     </div>
     </form>
 </body>
